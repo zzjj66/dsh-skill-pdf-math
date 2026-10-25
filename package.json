@@ -1,0 +1,36 @@
+{
+  "name": "dsh-skill-pdf-math",
+  "version": "0.1.0",
+  "description": "DSH skill: read mathematics out of PDFs and formula screenshots without guessing — text layer first, formula OCR second, cross-checked.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-skill",
+    "dsh-plugin",
+    "cordis-plugin",
+    "pdf",
+    "latex",
+    "formula",
+    "ocr"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
